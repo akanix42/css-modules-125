@@ -2,6 +2,7 @@ import { Template } from 'meteor/templating';
 import { ReactiveVar } from 'meteor/reactive-var';
 
 import './main.html';
+import style from './main.m.css';
 
 Template.hello.onCreated(function helloOnCreated() {
   // counter starts at 0
@@ -12,6 +13,9 @@ Template.hello.helpers({
   counter() {
     return Template.instance().counter.get();
   },
+  style() {
+    return style;
+  },
 });
 
 Template.hello.events({
@@ -20,3 +24,5 @@ Template.hello.events({
     instance.counter.set(instance.counter.get() + 1);
   },
 });
+console.log('style', style);
+

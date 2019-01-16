@@ -19,3 +19,6 @@ shell-server@0.4.0            # Server-side component of the `meteor shell` comm
 
 autopublish@1.0.7             # Publish all data to the clients (for prototyping)
 insecure@1.0.7                # Allow all DB writes from clients (for prototyping)
+
+nathantreid:css-modules@3.2.2 # this one doesn't work since it was built with Meteor 1.8
+#nathantreid:css-modules@3.2.2-meteor1.7 # - this one works as expected
